@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_landmark"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_main_classificaiton"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16sp"
+        android:text="人脸特征点"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_dense_landmark"
+        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_dense_landmark"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_main_classificaiton"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16sp"
+        android:text="人脸稠密点"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_expression"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_main_classificaiton"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16sp"
+        android:text="表情检测"
+        app:layout_constraintTop_toBottomOf="@id/btn_dense_landmark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
